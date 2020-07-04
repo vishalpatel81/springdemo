@@ -10,6 +10,7 @@ public class HelloSpringDemoApp {
 		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 		ICoach theCoach = applicationContext.getBean("myCoach", ICoach.class);
 		
+		// call methods
 		System.out.println(theCoach.getDailyWorkout());
 		System.out.println(theCoach.getDailyFortune());
 		
